@@ -49,7 +49,7 @@ TRANSFERS = 5 # Default 5
 
 CLIENT_ID = os.environ.get('CLIENT_ID')
 CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
-TOKEN = json.dumps(os.environ.get('TOKEN'))
+TOKEN = os.environ.get('TOKEN')
 # =================modify here=================
 
 
