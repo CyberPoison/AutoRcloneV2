@@ -44,8 +44,8 @@ CNT_SA_EXIT = 4  # if continually switch account for 4 times stop script
 # paramters for rclone.
 # If TPSLIMITxTRANSFERS is too big, will cause 404 user rate limit error,
 # especially for tasks with a lot of small files
-TPSLIMIT = 5 # Default 5
-TRANSFERS = 5 # Default 5
+TPSLIMIT = 3 # Default 3
+TRANSFERS = 3 # Default 3
 
 CLIENT_ID = os.environ.get('CLIENT_ID')
 CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
