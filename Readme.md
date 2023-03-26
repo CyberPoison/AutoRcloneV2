@@ -21,7 +21,7 @@ sudo apt-get install screen git && curl https://rclone.org/install.sh | sudo bas
 ```
 After all dependency above are successfully installed, run this command
 ```
-sudo git clone https://github.com/xyou365/AutoRclone && cd AutoRclone && sudo pip3 install -r requirements.txt
+sudo git clone https://github.com/CyberPoison/AutoRcloneV2 && cd AutoRclone && sudo pip3 install -r requirements.txt
 ```
 **For Windows system**: Directly download this project then [install latest rclone](https://rclone.org/downloads/). 
 Then run this command (type in cmd command windows or PowerShell windows) in our project folder
