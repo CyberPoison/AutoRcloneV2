@@ -55,7 +55,8 @@ The command would look something like
 If you have already N projects and want to create service accounts only in newly created projects,
 
 to 
-* create additional 1 project (project N+1 to project N+2)
+
+* create additional 1 project (project N+1 to project N+2)(Limit by google is 12 Projects by default)
 * enable the required services
 * create 100 (1 project, with 100) Service Accounts
 * and download their credentials into a folder named `accounts`
@@ -64,8 +65,10 @@ run
 
 `python3 gen_sa_accounts.py --quick-setup 1 --new-only` 
 
-If you want to create some service accounts using existing projects (do not create more projects), run 
-`python3 gen_sa_accounts.py --quick-setup -1`.
+#### If you want to create some service accounts using existing projects (do not create more projects), run 
+
+`python3 gen_sa_accounts.py --quick-setup -1`
+
 Note that this will overwrite the existing service accounts.
 
 After it is finished, there will be many json files in one folder named `accounts`. 
@@ -132,13 +135,25 @@ python3 rclone_sa_magic.py -s SourceID -d DestinationID -dp DestinationPathName 
 - [x] local to Team Drive
 - [ ] local to private folder
 - [ ] private folder to any (think service accounts cannot do anything about private folder)
+
+Before beggining set up your .env more details on the .env file.
+
+```
+cp .env.dist .env
+```
+```
+vi .env
+```
+When all variables are setup please run the script.
+
 ```
 python3 rclone_sa_magic.py -sp YourLocalPath -d DestinationID -dp DestinationPathName -b 1 -e 600
 ```
+if you need to check all flags run `python3 rclone_sa_magic.py -h`.
 
 * Run command `tail -f log_rclone.txt` to see what happens in details (linux only).
 
-![](AutoRclone.jpg)
+![](AutoRcloneV2.png)
 
 Also let's talk about this project in Telegram Group [AutoRclone](https://t.me/AutoRclone)
 

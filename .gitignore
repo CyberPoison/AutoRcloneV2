@@ -17,6 +17,8 @@ accounts.zip
 accounts1k.zip
 accounts400.zip
 accounts600.zip
+rclone_sa_magic.py.back
+.env
 
 # exception to the rule
 !credentials/.gsuite_only.txt
