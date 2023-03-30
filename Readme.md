@@ -139,7 +139,9 @@ python3 rclone_sa_magic.py -s SourceID -d DestinationID -dp DestinationPathName 
 - [ ] local to private folder
 - [ ] private folder to any (think service accounts cannot do anything about private folder)
 
-Before beggining set up your .env more details on the .env file.
+### Before beggining set up your .env more details on the .env file.
+Run `rclone config --config ./rclone.conf`
+then get the required variables and setup the .env:.
 
 ```
 cp .env.dist .env
@@ -155,6 +157,8 @@ python3 rclone_sa_magic.py -sp YourLocalPath -d DestinationID -dp DestinationPat
 if you need to check all flags run `python3 rclone_sa_magic.py -h`.
 
 * Run command `tail -f log_rclone.txt` to see what happens in details (linux only).
+
+Actual Speeds.
 
 ![](AutoRcloneV2.png)
 
