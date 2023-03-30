@@ -53,7 +53,7 @@ Note: 1 service account can copy around 750gb a day, 1 project makes 100 service
 
 The command would look something like 
  `python3 gen_sa_accounts.py --quick-setup 1`
- replace "1" with the number of projects you want
+ replace "1" with the number of projects you want to use (No News projects it will use existing onces)
 
 If you have already N projects and want to create service accounts only in newly created projects,
 
@@ -64,7 +64,7 @@ to
 * create 100 (1 project, with 100) Service Accounts
 * and download their credentials into a folder named `accounts`
  
-run 
+run if you want new projects for each 100 Service Accounts
 
 `python3 gen_sa_accounts.py --quick-setup 1 --new-only` 
 
@@ -83,7 +83,7 @@ We use Google Groups to manager our service accounts considering the
 [Official limits to the members of Team Drive](https://support.google.com/a/answer/7338880?hl=en) (Limit for individuals and groups directly added as members: 600).
 
 #### For GSuite Admin
-1. Turn on the Directory API following [official steps](https://developers.google.com/admin-sdk/directory/v1/quickstart/python) (save the generated json file to folder `credentials`).
+1. Turn on the Directory API and Admin SDK API following [official steps](https://developers.google.com/admin-sdk/directory/v1/quickstart/python) (save the generated json file to folder `credentials`) or enable it directly over the google cloud console.
 
 2. Create group for your organization [in the Admin console](https://support.google.com/a/answer/33343?hl=en). After create a group, you will have an address for example`sa@yourdomain.com`.
 
