@@ -153,8 +153,9 @@ vi .env
 When all variables are setup please run the script.
 
 ```
-python3 rclone_sa_magic.py -sp YourLocalPath/YourSourceTeamDriveID -d DestinationID -dp DestinationPathName/YourDestinationTeamDriveID -b 1 -e 600
+python3 rclone_sa_magic.py -s YourSourceTeamDriveID -d DestinationID/YourDestinationTeamDriveID -dp DestinationPathName -b 1 -e 600
 ```
+
 if you need to check all flags run `python3 rclone_sa_magic.py -h`.
 
 * Run command `tail -f log_rclone.txt` to see what happens in details (linux only).
