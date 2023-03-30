@@ -140,7 +140,8 @@ python3 rclone_sa_magic.py -s SourceID -d DestinationID -dp DestinationPathName 
 - [ ] private folder to any (think service accounts cannot do anything about private folder)
 
 ### Before beggining set up your .env more details on the .env file.
-Run `rclone config --config ./rclone.conf`
+Run `rclone config --config ./rclone.conf` setup a normal google drive with client id and client secret from your google cloud console, and setup everything (You can skip the Team Drive part when asked, it will be not used)
+
 then get the required variables and setup the .env:.
 
 ```
